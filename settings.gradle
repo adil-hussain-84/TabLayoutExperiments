@@ -1,0 +1,3 @@
+rootProject.name = "TabLayout Experiments"
+
+include ':app1'
