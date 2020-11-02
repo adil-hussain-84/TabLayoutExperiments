@@ -15,8 +15,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tabBackground="@color/grey"
         app:tabGravity="fill"
-        app:tabIndicatorFullWidth="true"
-        app:tabIndicatorGravity="bottom"
         app:tabMode="fixed">
 
         <com.google.android.material.tabs.TabItem
