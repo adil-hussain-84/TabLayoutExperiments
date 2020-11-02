@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">TabLayout Experiment2</string>
+
+    <string name="current_page">Current page</string>
+    <string name="next_page">Next page</string>
+    <string name="previous_page">Previous page</string>
+
+</resources>

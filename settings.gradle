@@ -1,3 +1,4 @@
-rootProject.name = "TabLayout Experiments"
+rootProject.name = "TabLayoutExperiments"
 
 include ':app1'
+include ':app2'
