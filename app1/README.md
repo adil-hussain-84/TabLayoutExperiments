@@ -5,4 +5,4 @@ This application demonstrates that a [TabLayout](https://developer.android.com/r
 ![Screenshot of TabLayout bug](screenshots/TabLayoutBugScreenshot.png)
 
 The fix (as demonstrated in [app2](../app2)) is to give the `TabLayout` a `tabMaxWidth` value different to the default value of `264dp`.
-Note that `TabLayout`s gets a default `tabMaxWidth` value via the `Base.Widget.Design.TabLayout` style that's defined in the `com.google.android.material:material` library's `res` folder.
+Note that `TabLayout`s get a default `tabMaxWidth` value via the `Base.Widget.Design.TabLayout` style that's defined in the `com.google.android.material:material` library's `res` folder.
