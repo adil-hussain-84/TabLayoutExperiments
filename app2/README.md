@@ -1,10 +1,8 @@
-# TabLayout tab width bug
+# TabLayout tab width bug workaround
 
-This application demonstrates that a `TabLayout` which has a `tabMode` value of `fixed` and a `tabGravity` value of `fill` results in the first tab having excessive start and end padding on some devices, as follows:
+This application demonstrates a workaround for the `TabLayout` bug which renders the first tab with excessive start and end padding on some devices.
+(See [app1](../app1) for more information about the bug itself.)
 
-![Screenshot of TabLayout bug](TabLayoutBugScreenshot.png)
+I have found that giving the `TabLayout` a `tabMaxWidth` value of `260dp` and a `tabMinWidth` value of `160dp` (as in the layout file [here](src/main/res/layout/activity_main.xml) causes it to render well on all devices in both portrait and landscape orientations, as follows:
 
-The fix is to give the `TabLayout` a `tabMaxWidth` value different to the default value (as defined by the `design_tab_max_width` dimension value in the `com.google.android.material:material` library) of `264dp`.
-I have found that giving the `TabLayout` a `tabMaxWidth` value of `260dp` and a `tabMinWidth` value of `160dp` causes it to render well on all devices in both portrait and landscape orientations, as follows:
-
-![Screenshot of TabLayout workaround](TabLayoutWorkaroundScreenshot.png)
+![Screenshot of TabLayout workaround](screenshots/TabLayoutWorkaroundScreenshot.png)
